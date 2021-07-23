@@ -1,23 +1,89 @@
-body{
-    background: url("./img/brushed.png");
-}
 *{
     box-sizing: border-box;
 }
+
+/*--------------image with name------------*/
 .container{
     text-align: center;
-    background-color: royalblue;
-
 }
 .logo{
     text-align: justify;
     padding-left: 200px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.text{
+    padding: 30px 0px 0px 30px;
 }
 #img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+}
+#coll-name1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: royalblue;
+    padding: 0px;
+}
+#coll-name2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    color: royalblue;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+/*------------image with name end----------*/
+
+/*------heading------*/
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-style: oblique;
+    color: blue;
+}
+/*---------heading end------*/
+
+
+/*------------award form start----------------*/
+.enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
+    display: flex;
 }
 .main-contain{
-    text-align: center;
-    background-color: saddlebrown;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
+.in_text,.in_user{
+    width: 200px;
+    height: auto;
+    text-align: left;
+    padding: 10px;
+}
+.in_text{
+    color: blue;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.in_user{
+    width: 500px;
+}
+input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid gray;
+    width:100%
+}
+
+.student_details{
+    padding: 5px;
+}
+
+/*-------------award form stop----------------*/

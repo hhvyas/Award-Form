@@ -8,101 +8,111 @@
     <body>
         <div class="container">
             <div class="logo">
-                <section>
-                    <img id= "img"src="./img/RSU-Logo.png">    
-                </section>
-                <section>
-                    <span>Rashtriya Raksha University</span>
-                </section>
+                <div>
+                    <a href="https://rru.ac.in/" target="_blank">
+                        <img id= "img"src="./img/RSU-Logo.png" alt="RRU_LOGO">
+                    </a>
+                </div>
+                <div class="text">
+                    <span id="coll-name1"><a href="https://rru.ac.in/">Rashtriya Raksha University</a>
+                    <p id="coll-name2">Pioneering National Security and Police University of India</p></span>
+                </div>
             </div>
+
+            <div class="heading">
+                <p>Award Form</p>
+            </div>
+
             <div class="main-contain">
                 <form action="POST">
                     <div class="student_details">
+                        
                         <div class="enrollment_no">
-                            <label for="enrollment_no">Enrollment No.</label>
-                            <input type="text" id="enrollment_no" required>
+                            <div class="in_text"><label id="labels" for="enrollment_no">Enrollment No. :</label></div>
+                            <div class="in_user"><input type="text" size="50" id="rollno" required></div>
                         </div>
+
                         <div class="student_fname">
-                            <label for="student_fname">First Name</label>
-                            <input type="text" id="student_fname" required>
+                            <div class="in_text"><label id="labels" for="student_fname">First Name :</label></div>
+                            <div class="in_user"><input type="text" size="50" id="student_fname" required></div>
                         </div>
+
                         <div class="student_lname">
-                            <label for="student_lname">Last Name</label>
-                            <input type="text" id="student_lname" required>
+                            <div class="in_text"><label id="labels" for="student_lname">Last Name :</label></div>
+                            <div class="in_user"><input type="text" size="50" id="student_lname" required></div>
                         </div>
-        
+
+                        <div class="student_email">
+                            <div class="in_text"><label id="labels" for="email">Email ID :</label></div>
+                            <div class="in_user"><input type="email" size="50" id="email" required></div>
+                        </div>
+
                         <div class="student_gender">
-                            <label for="gender_option">Gender</label>
-                            <select id="gender_option">
+                            <div class="in_text"><label id="labels" for="gender_option">Gender :</label></div>
+                            <div class="in_user"><select id="gender_option" required>
                                 <option value="default">Select</option>
                                 <option value="female">Female</option>
                                 <option value="male">Male</option>
                                 <option value="other">Other</option>
-                            </select>
+                            </select></div>
                         </div>
-        
-                        <div class="student_email">
-                            <label for="email">Email ID</label>
-                            <input type="email" id="email">
-                        </div>
-        
+
                         <div class="student_course_details">
-                            <label for="student_course">Course Name</label>
-                            <select id="student_course">
+                            <div class="in_text"><label id="labels" for="student_course">Course Name :</label></div>
+                            <div class="in_user"><select id="student_course" required>
                                 <option value="default">Select</option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
-                            </select>
+                            </select></div>
                         </div>
-        
+
                         <div class="student_semester">
-                            <label for="sem_option">Semester</label>
-                            <select id="sem_option">
-                                <option value="default"></option>
-                                <option value="default">I</option>
-                                <option value="female">II</option>
-                                <option value="male">III</option>
-                                <option value="other">IV</option>
-                                <option value="default">V</option>
-                                <option value="female">VI</option>
-                                <option value="male">VII</option>
-                                <option value="other">VIII</option>
-                            </select>
+                            <div class="in_text"><label id="labels" for="sem_option">Semester :</label></div>
+                            <div class="in_user"><select id="sem_option" required>
+                                <option value="default">Select</option>
+                                <option value="I">I</option>
+                                <option value="II">II</option>
+                                <option value="III">III</option>
+                                <option value="IV">IV</option>
+                                <option value="V">V</option>
+                                <option value="VI">VI</option>
+                                <option value="VII">VII</option>
+                                <option value="VIII">VIII</option>
+                            </select></div>
                         </div>
-                    </div>
-                    
-        
-        
-                    <div class="event_details">
+
                         <div class="event_name">
-                            <label for="event_name">Event Name</label>
-                            <input type="text" id="event_name">
+                            <div class="in_text"><label id="labels" for="event_name">Event Name :</label></div>
+                            <div class="in_user"><input type="text" size="50" id="event_name" required></div>
                         </div>
+
                         <div class="type_of_event">
-                            <label for="event_type">Event Type</label>
-                            <select name="" id="event_type">
-                                <option value="default"></option>
-                                <option value="default">University</option>
-                                <option value="default">District</option>
-                                <option value="female">State</option>
-                                <option value="male">National</option>
-                                <option value="other">International</option>
-                            </select>
+                            <div class="in_text"><label  id="labels"for="event_type">Event Type :</label></div>
+                            <div class="in_user"><select name="" id="event_type" required>
+                                <option value="default">Select</option>
+                                <option value="University">University</option>
+                                <option value="District">District</option>
+                                <option value="State">State</option>
+                                <option value="National">National</option>
+                                <option value="International">International</option>
+                            </select></div>
                         </div>
-        
+
                         <div class="event_date">
-                            <label for="event_date">Date</label>
-                            <input type="date" id="event_date">
+                            <div class="in_text"><label id="labels" for="event_date">Date :</label></div>
+                            <div class="in_user"><input type="date" id="event_date" required></div>
                         </div>
-        
+
                         <div class="proof">
-                            <label for="proof">Upload File</label>
-                            <input type="file" id="proof">
+                            <div class="in_text"><label id="labels" for="proof">Upload File :</label></div>
+                            <div class="in_user"><input type="file" id="proof" required></div>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Submit</button>
                         </div>
                     </div>
-        
-                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
