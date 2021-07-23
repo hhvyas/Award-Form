@@ -1,0 +1,23 @@
+body{
+    background: url("./img/brushed.png");
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    background-color: royalblue;
+
+}
+.logo{
+    text-align: justify;
+    padding-left: 200px;
+}
+#img{
+    width: 150px;
+    height: 150px;
+}
+.main-contain{
+    text-align: center;
+    background-color: saddlebrown;
+}
