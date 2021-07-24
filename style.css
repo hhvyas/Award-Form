@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    background-color: whitesmoke;
 }
 
 /*--------------image with name------------*/
@@ -7,9 +8,8 @@
     text-align: center;
 }
 .logo{
-    text-align: justify;
-    padding-left: 200px;
     display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .text{
@@ -51,6 +51,11 @@ a:hover{
 
 
 /*------------award form start----------------*/
+span {
+    color: red;
+    font-size: 15px;
+    padding-bottom: 10%;
+}
 .select-css {
     display: block;
     font-size: 12px;
@@ -157,4 +162,18 @@ input{
     padding: 5px;
 }
 
+
+.button {
+    margin: 10% 0;
+}
+button{
+    padding: 5px 42px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 18px;
+}
 /*-------------award form stop----------------*/
