@@ -3,21 +3,34 @@
         <title>
             Event Registration
         </title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="logo">
+        <div class="nav">
+            
+            <div class="logo navbar-img">
                 <div>
                     <a href="https://rru.ac.in/" target="_blank">
-                        <img id= "img"src="./img/RSU-Logo.png" alt="RRU_LOGO">
+                        <img id= "img" src="./img/RSU-Logo.png" alt="RRU_LOGO">
                     </a>
                 </div>
                 <div class="text">
-                    <span id="coll-name1"><a href="https://rru.ac.in/">Rashtriya Raksha University</a>
+                    <span id="coll-name1"><a href="https://rru.ac.in/" target="_blank">Rashtriya Raksha University</a>
                     <p id="coll-name2">Pioneering National Security and Police University of India</p></span>
                 </div>
             </div>
+
+            <div class="navbar">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="login.html">Dashboard Login</a>    
+            </div>
+
+        </div>
+
+          
+        <div class="main_container">
+            
 
             <div class="heading">
                 <p>Event Registration Form</p>
@@ -28,27 +41,27 @@
                     <div class="student_details">
                         
                         <div class="enrollment_no">
-                            <div class="in_text"><label id="labels" for="enrollment_no">Enrollment No <span>*</span> :</label></div>
-                            <div class="in_user"><input type="text" size="50" id="rollno" required></div>
+                            <div class="in_text"><label id="labels" for="enrollment_no">Enrollment No<sup>*</sup> :</label></div>
+                            <div class="in_user"><input type="text" id="rollno" required></div>
                         </div>
 
                         <div class="student_fname">
-                            <div class="in_text"><label id="labels" for="student_fname">First Name <span>*</span> :</label></div>
-                            <div class="in_user"><input type="text" size="50" id="student_fname" required></div>
+                            <div class="in_text"><label id="labels" for="student_fname">First Name<sup>*</sup> :</label></div>
+                            <div class="in_user"><input type="text" id="student_fname" required></div>
                         </div>
 
                         <div class="student_lname">
-                            <div class="in_text"><label id="labels" for="student_lname">Last Name <span>*</span> :</label></div>
-                            <div class="in_user"><input type="text" size="50" id="student_lname" required></div>
+                            <div class="in_text"><label id="labels" for="student_lname">Last Name<sup>*</sup> :</label></div>
+                            <div class="in_user"><input type="text" id="student_lname" required></div>
                         </div>
 
                         <div class="student_email">
-                            <div class="in_text"><label id="labels" for="email">Email ID <span>*</span> :</label></div>
-                            <div class="in_user"><input type="email" size="50" id="email" required></div>
+                            <div class="in_text"><label id="labels" for="email">Email ID<sup>*</sup> :</label></div>
+                            <div class="in_user"><input type="email" id="email" required></div>
                         </div>
 
                         <div class="student_gender">
-                            <div class="in_text"><label id="labels" for="gender_option">Gender <span>*</span> :</label></div>
+                            <div class="in_text"><label id="labels" for="gender_option">Gender<sup>*</sup> :</label></div>
                             <div class="in_user"><select id="gender_option" class="select-css" required>
                                 <option value="default">Select</option>
                                 <option value="female">Female</option>
@@ -58,7 +71,7 @@
                         </div>
 
                         <div class="student_course_details">
-                            <div class="in_text"><label id="labels" for="student_course">Course Name <span>*</span> :</label></div>
+                            <div class="in_text"><label id="labels" for="student_course">Course Name<sup>*</sup> :</label></div>
                             <div class="in_user"><select id="student_course" class="select-css" required>
                                 <option value="default">Select</option>
                                 <option value=""></option>
@@ -68,9 +81,9 @@
                         </div>
 
                         <div class="student_semester">
-                            <div class="in_text"><label id="labels" for="sem_option">Semester <span>*</span> :</label></div>
+                            <div class="in_text"><label id="labels" for="sem_option">Semester<sup>*</sup> :</label></div>
                             <div class="in_user "><select id="sem_option" class="select-css" required>
-                                <option value="default">Select</option>
+                                <option value="default" disabled selected >Select</option>
                                 <option value="I">I</option>
                                 <option value="II">II</option>
                                 <option value="III">III</option>
@@ -83,12 +96,12 @@
                         </div>
 
                         <div class="event_name">
-                            <div class="in_text"><label id="labels" for="event_name">Event Name <span>*</span> :</label></div>
-                            <div class="in_user"><input type="text" size="50" id="event_name" required></div>
+                            <div class="in_text"><label id="labels" for="event_name">Event Name<sup>*</sup> :</label></div>
+                            <div class="in_user"><input type="text" id="event_name" required></div>
                         </div>
 
                         <div class="type_of_event">
-                            <div class="in_text"><label  id="labels"for="event_type">Event Type <span>*</span> :</label></div>
+                            <div class="in_text"><label  id="labels"for="event_type">Event Type<sup>*</sup> :</label></div>
                             <div class="in_user"><select name="" id="event_type" class="select-css" required>
                                 <option value="default">Select</option>
                                 <option value="University">University</option>
@@ -100,12 +113,12 @@
                         </div>
 
                         <div class="event_date">
-                            <div class="in_text"><label id="labels" for="event_date">Date :</label></div>
+                            <div class="in_text"><label id="labels" for="event_date">Date<sup>*</sup> :</label></div>
                             <div class="in_user"><input type="date" id="event_date" required></div>
                         </div>
 
                         <div class="proof">
-                            <div class="in_text"><label id="labels" for="proof">Upload File :</label></div>
+                            <div class="in_text"><label id="labels" for="proof">Upload File<sup>*</sup> :</label></div>
                             <div class="in_user"><input type="file" id="proof" required></div>
                         </div>
                         <div class="button">
@@ -116,4 +129,8 @@
             </div>
         </div>
     </body>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </html>
