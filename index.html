@@ -25,12 +25,10 @@
                 <a class="nav-link active" href="index.html">Home</a>
                 <a class="nav-link" href="login.html">Dashboard Login</a>    
             </div>
-
         </div>
 
           
         <div class="main_container">
-            
 
             <div class="heading">
                 <p>Event Registration Form</p>
@@ -42,28 +40,28 @@
                         
                         <div class="enrollment_no">
                             <div class="in_text"><label id="labels" for="enrollment_no">Enrollment No<sup>*</sup> :</label></div>
-                            <div class="in_user"><input type="text" id="rollno" required></div>
+                            <div class="in_user"><input type="text" id="rollno" required placeholder="RSU0123456"></div>
                         </div>
 
                         <div class="student_fname">
                             <div class="in_text"><label id="labels" for="student_fname">First Name<sup>*</sup> :</label></div>
-                            <div class="in_user"><input type="text" id="student_fname" required></div>
+                            <div class="in_user"><input type="text" id="student_fname" required placeholder="First Name"></div>
                         </div>
 
                         <div class="student_lname">
                             <div class="in_text"><label id="labels" for="student_lname">Last Name<sup>*</sup> :</label></div>
-                            <div class="in_user"><input type="text" id="student_lname" required></div>
+                            <div class="in_user"><input type="text" id="student_lname" required placeholder="Last Name"></div>
                         </div>
 
                         <div class="student_email">
                             <div class="in_text"><label id="labels" for="email">Email ID<sup>*</sup> :</label></div>
-                            <div class="in_user"><input type="email" id="email" required></div>
+                            <div class="in_user"><input type="email" id="email" required placeholder="example@mail.com"></div>
                         </div>
 
                         <div class="student_gender">
                             <div class="in_text"><label id="labels" for="gender_option">Gender<sup>*</sup> :</label></div>
-                            <div class="in_user"><select id="gender_option" class="select-css" required>
-                                <option value="default">Select</option>
+                            <div class="in_user"><select id="gender_option" class="select-css" required >
+                                <option value="default" selected hidden disabled>Select</option>
                                 <option value="female">Female</option>
                                 <option value="male">Male</option>
                                 <option value="other">Other</option>
@@ -73,7 +71,7 @@
                         <div class="student_course_details">
                             <div class="in_text"><label id="labels" for="student_course">Course Name<sup>*</sup> :</label></div>
                             <div class="in_user"><select id="student_course" class="select-css" required>
-                                <option value="default">Select</option>
+                                <option value="default" selected hidden disabled>Select</option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
@@ -83,7 +81,7 @@
                         <div class="student_semester">
                             <div class="in_text"><label id="labels" for="sem_option">Semester<sup>*</sup> :</label></div>
                             <div class="in_user "><select id="sem_option" class="select-css" required>
-                                <option value="default" disabled selected >Select</option>
+                                <option value="default" disabled hidden selected>Select</option>
                                 <option value="I">I</option>
                                 <option value="II">II</option>
                                 <option value="III">III</option>
@@ -97,13 +95,13 @@
 
                         <div class="event_name">
                             <div class="in_text"><label id="labels" for="event_name">Event Name<sup>*</sup> :</label></div>
-                            <div class="in_user"><input type="text" id="event_name" required></div>
+                            <div class="in_user"><input type="text" id="event_name" required placeholder="e.g. Coding Event"></div>
                         </div>
 
                         <div class="type_of_event">
                             <div class="in_text"><label  id="labels"for="event_type">Event Type<sup>*</sup> :</label></div>
                             <div class="in_user"><select name="" id="event_type" class="select-css" required>
-                                <option value="default">Select</option>
+                                <option value="default" selected hidden disabled>Select</option>
                                 <option value="University">University</option>
                                 <option value="District">District</option>
                                 <option value="State">State</option>

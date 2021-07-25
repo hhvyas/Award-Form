@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    background-color: whitesmoke;
 }
 
 /*-------------navbar--------------------*/
 .nav{
     display: flex;
-    background-color: blueviolet;
+    margin-bottom: 30px;
+    background-color: #42b0f5;
 }
 .navbar{
     margin-left: auto;
@@ -22,28 +22,27 @@
     display: flex;
 }
 .text{
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
 }
 #img{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px 0px 20px;
 }
 #coll-name1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
-    color: royalblue;
+    font-size: x-large;
     padding: 0px;
 }
 #coll-name2{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:small;
-    color: royalblue;
+    font-size:medium;
+    color: white;
     padding: 0px;
 }
 a{
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 a:hover{
     text-decoration: underline;
@@ -187,3 +186,9 @@ button{
     border-radius: 18px;
 }
 /*-------------award form stop----------------*/
+
+@media (min-width : 650px) and (max-width : 500px) {
+    .enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
+        display: none;
+    }
+  }
