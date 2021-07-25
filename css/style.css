@@ -186,9 +186,23 @@ button{
     border-radius: 18px;
 }
 /*-------------award form stop----------------*/
-
-@media (min-width : 650px) and (max-width : 500px) {
+@media (min-width:320px) and (max-width : 400px){
     .enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
-        display: none;
+        display: inline-block;
+    }
+    input,.select-css{
+        width:33.5%
+    }
+}
+
+@media (min-width : 401px) and (max-width : 600px) {
+    .enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
+        display: inline-block;
+    }
+    input{
+        width:50%
+    }
+    .select-css{
+        width:50%;
     }
   }
