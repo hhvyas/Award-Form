@@ -4,27 +4,63 @@
             Event Registration
         </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/login.css">
     </head>
     <body>
-      <div class="nav">
-        <div class="logo navbar-img">
-            <div>
-                <a href="https://rru.ac.in/" target="_blank">
-                    <img id= "img" src="./img/RSU-Logo.png" alt="RRU_LOGO">
-                </a>
+        <div class="nav">
+            <div class="logo navbar-img">
+                <div>
+                    <a href="https://rru.ac.in/" target="_blank">
+                        <img id= "img" src="./img/RSU-Logo.png" alt="RRU_LOGO">
+                    </a>
+                </div>
+                <div class="text">
+                    <span id="coll-name1"><a href="https://rru.ac.in/" target="_blank">Rashtriya Raksha University</a>
+                    <p id="coll-name2">Pioneering National Security and Police University of India</p></span>
+                </div>
             </div>
-            <div class="text">
-                <span id="coll-name1"><a href="https://rru.ac.in/" target="_blank">Rashtriya Raksha University</a>
-                <p id="coll-name2">Pioneering National Security and Police University of India</p></span>
+
+            <div class="navbar">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="login.html">Dashboard Login</a>    
             </div>
         </div>
 
-        <div class="navbar">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="login.html">Dashboard Login</a>    
+      <form action="dashboard.html" method="POST">
+
+        <div class="main_container">
+            <div class="login">
+                
+                <div class="heading">
+                    <p>Login</p>
+                </div>
+                
+                <div class="Username">
+                    <!--<div>
+                        <span>Username:</span>
+                    </div>-->
+                    <div>
+                        <input type="text" id="Username" required placeholder="Username">
+                    </div>
+                </div>
+
+                <div class="password">
+                    <!--<div>
+                        <span>Password:</span>
+                    </div>-->
+                    <div>
+                        <input type="password" id="Password" required placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </div>
         </div>
-      </div>
+
+      </form>
     </body>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

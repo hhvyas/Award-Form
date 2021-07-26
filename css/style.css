@@ -186,9 +186,15 @@ button{
     border-radius: 18px;
 }
 /*-------------award form stop----------------*/
+
+
+/*responsive start*/
 @media (min-width:320px) and (max-width : 400px){
     .enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
         display: inline-block;
+    }
+    .in_text{
+        text-align: center;
     }
     input,.select-css{
         width:33.5%
@@ -199,10 +205,8 @@ button{
     .enrollment_no,.student_fname,.student_lname,.student_gender,.student_email,.student_course_details,.student_semester,.event_name,.type_of_event,.event_date,.proof{
         display: inline-block;
     }
-    input{
+    input,.select-css{
         width:50%
     }
-    .select-css{
-        width:50%;
-    }
-  }
+}
+/*responsive end*/
